@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Custom Kings</title>
+  <link rel="icon" type="images/png" href="{% static 'Logos/Logo_Custom_Kings_a-removebg-preview.png' %}"/>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+    .Container{
+      padding: 20px;
+      border: 5px solid #000;
+      border-radius: 20px;
+      background-color: #f9f9f9;
+      margin-bottom: 10px;
+      margin-left: 150px;
+      margin-right: 150px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+  <div class = "Container">
+<p style="text-align:justify;"><h3>Our Story</h3>
+  Welcome to Custom Kings, where passion meets creativity! Founded in 2023, we embarked on a journey to redefine the way you express yourself through custom products. What started as a simple idea has now blossomed into a vibrant community of individuals who believe in the power of personalization.
+  <br><br>
+  <h3>Our Mission</h3>
+  At Custom Kings, we believe in turning ordinary into extraordinary. Our mission is to empower you to create one-of-a-kind, meaningful products that reflect your unique style, memories, and aspirations. We're not just about selling products; we're about curating experiences that resonate with you on a personal level.
+  <br><br>
+  <h3>Custom Kings Difference</h3>
+  Unparalleled Customization
+  We take pride in offering a seamless and user-friendly customization experience. From choosing colors to adding personal touches, our intuitive design tools make it easy for you to bring your ideas to life.
+  <br><br>
+  <h3>Quality Craftsmanship</h3>
+  Each product at Custom Kings is meticulously crafted with the utmost attention to detail. We source high-quality materials to ensure that your custom creations not only look amazing but also stand the test of time.
+  <br><br>
+  <h3>Eco-Friendly Practices</h3>
+  We are committed to sustainability. Our production processes prioritize eco-friendly materials and practices, ensuring that your custom items are not only beautiful but also kind to the planet.
+  <br><br>
+  <h3>Our Community</h3>
+  Custom Kings is more than just a store; it's a community of like-minded individuals who appreciate the beauty of self-expression. Join us on Instagram and Facebook to connect with fellow creators, share your designs, and be inspired by the incredible diversity within our community.
+  <br><br>
+  <h3>Customer Satisfaction</h3>
+  Your satisfaction is our priority. We stand by the quality of our products and are dedicated to providing excellent customer service. If you ever have questions or concerns, our friendly support team is here to assist you.
+  <br>
+  Thank you for choosing Custom Kings for your custom creations. Together, let's make every product a reflection of your unique story!
+  <br><br><br>
+  <h4>Created by- Sarthak(03029802021) & Ritesh (03629802021) </h4></p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
